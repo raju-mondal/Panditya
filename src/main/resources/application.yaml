@@ -1,0 +1,64 @@
+
+server:
+    port: 9201
+    servlet:
+        contextPath: /users
+
+#spring.main.allow-circular-references=true
+
+
+
+
+spring:
+
+  application:
+    name : elements_service_user
+  profiles:
+    active: test
+ 
+  main:
+    allow-circular-references: true
+   
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:8761/eureka/
+        should-unregister-on-shutdown: true
+    instance:
+        hostname: localhost
+        lease-expiration-duration-in-seconds: 15
+        lease-renewal-interval-in-seconds: 5
+
+logging:
+    level:
+        com:
+            netflix:
+                eureka: OFF
+                discovery: OFF
+        web: ERROR
+        root: ERROR
+        org:
+            springframework:
+                web: ERROR
+            hibernate: ERROR
+        net:
+            guides: ERROR
+
+
+CustomConfiguration:
+    ReadCount: 3
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: "*" #health,info,beans,env
+    info:
+        env:
+            enabled: true 
+info:
+    app:
+        name: Elements-Users
+        version: v1.0.0
+        description: "Elements View for Users"
+        author: MadhuShyamTechnologysPrivateLimited

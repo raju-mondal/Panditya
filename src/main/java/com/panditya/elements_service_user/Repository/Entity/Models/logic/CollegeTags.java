@@ -1,0 +1,32 @@
+package com.panditya.elements_service_user.Repository.Entity.Models.logic;
+
+public enum CollegeTags {
+
+    ELITE,
+    TOP,
+    BEST,
+    LEADING,
+    RENOWNED,
+    PRESTIGIOUS,
+    DISTINGUISHED,
+    SKILL_BASED,
+    GLOBALLY_CONNECTED,
+    INTERNATIONALLY_RECOGNIZED,
+    LOCAL_GEM,
+    STUDENT_CENTERED,
+    VIBRANT_CAMPUS,
+    MERIT_BASED,
+    AFFORDABLE,
+    SPECIALIZED,
+    INNOVATIVE,
+    PREMIER,
+    RESEARCH_DRIVEN,
+    REGIONAL,
+    COMMUNITY,
+    RESEARCH,
+    LATEST,
+    GOVERNMENT,
+    PRIVATE,
+    NON_PROFIT, 
+    THINK_TANKS
+}
