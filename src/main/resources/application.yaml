@@ -1,0 +1,20 @@
+
+
+
+
+server:
+    port: 9990
+
+
+spring:
+    application:
+        name: elements-logger
+    profiles:
+        active: dev
+    
+    
+
+
+
+CustomConfiguration:
+    ReadCount: 3

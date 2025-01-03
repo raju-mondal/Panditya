@@ -1,0 +1,12 @@
+
+
+server:
+    port: 9999
+
+
+spring:
+    application:
+        name: elements-logger
+    profiles:
+        active: dev
+  

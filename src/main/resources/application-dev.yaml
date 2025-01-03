@@ -1,0 +1,38 @@
+
+
+
+server:
+    port: 9998
+
+
+spring:
+    jpa:
+        database: POSTGRESQL
+        generate-ddl: true
+        hibernate:
+        #Create means create everytime
+            ddl-auto: none
+        show-sql: true
+        properties:
+            hibernate:
+                format-sql: true
+            #dialect: org.hibernate.dialect.MySQL8Dialect
+    datasource:
+
+        driver-class-name: org.postgresql.Driver
+        url : jdbc:postgresql://localhost:5432/pandityadb       #jdbc:postgresql://ep-summer-sky-a5tu8v7y.us-east-2.aws.neon.tech/pandityadb
+        username: postgres
+        password: ramsita 
+        hikari:
+            schema: dev
+        #hikari:
+        #schema: database/schema.sql
+    # schema: classpath:db
+    batch:
+        jdbc:
+            initialize-schema: always
+    sql:
+  
+        init:
+            continue-on-error: true
+            mode: always
